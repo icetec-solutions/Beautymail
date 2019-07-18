@@ -141,7 +141,7 @@ class Beautymail implements Mailer
     {
         $this->settings['logo']['path'] = str_replace(
             '%PUBLIC%',
-            \Request::getSchemeAndHttpHost(),
+            \Illuminate\Support\Facades\Request::getSchemeAndHttpHost(),
             $this->settings['logo']['path']
         );
     }

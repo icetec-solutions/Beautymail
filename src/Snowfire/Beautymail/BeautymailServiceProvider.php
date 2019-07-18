@@ -25,7 +25,7 @@ class BeautymailServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../../../public' => public_path('vendor/beautymail'),
+            __DIR__.'/../../../public' => base_path('vendor/beautymail'),
         ], 'public');
 
         $this->loadViewsFrom(__DIR__.'/../../views', 'beautymail');
