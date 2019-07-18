@@ -41,6 +41,22 @@ Publish assets to your public folder
     
 Configure your settings such as logo url and social links in `config/beautymail.php`
 
+If Lumen
+
+```php
+$app->configure('beautymail');
+
+$app->register(Snowfire\Beautymail\BeautymailServiceProvider::class);
+```
+
+Publish Configuration
+
+```shell
+php artisan vendor:publish --provider="Snowfire\Beautymail\BeautymailServiceProvider"
+```
+
+
+
 ## Send your first Beauty mail
 
 Add this to your `routes.php`
